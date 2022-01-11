@@ -72,7 +72,7 @@ func NewConverterProvider(cfg converter.ProviderConfig) (ConverterProvider, erro
 	if err := add(blackfriday.Provider); err != nil {
 		return nil, err
 	}
-	if err := add(asciidocext.Provider, "ad", "adoc"); err != nil {
+	if err := add(asciidocext.Provider, "asciidoc", "ad", "adoc"); err != nil {
 		return nil, err
 	}
 	if err := add(rst.Provider); err != nil {
